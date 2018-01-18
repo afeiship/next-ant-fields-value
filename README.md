@@ -2,7 +2,17 @@
 > Set fields value for ant design based on next.
 
 
-## resources:
+## usage:
+```js
+var obj = {
+  username: 'afei',
+  password: '1233',
+  sex: 'male'
+};
 
-## todos:
-- [ ] unit test case
+var result = nx.antFieldsValue( obj );
+
+assert.equal(result.username.value,'afei' );
+assert.equal(result.password.value,'1233' );
+assert.equal(result.sex.value,'male' );
+```
