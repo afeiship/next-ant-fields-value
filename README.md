@@ -1,18 +1,27 @@
 # next-ant-fields-value
 > Set fields value for ant design based on next.
 
+## installation
+```bash
+npm install -S @feizheng/next-ant-fields-value
+```
 
-## usage:
+## usage
 ```js
-var obj = {
+import '@feizheng/next-ant-fields-value';
+
+const obj = {
   username: 'afei',
   password: '1233',
   sex: 'male'
 };
 
-var result = nx.antFieldsValue( obj );
+const result = nx.antFieldsValue( obj );
 
-assert.equal(result.username.value,'afei' );
-assert.equal(result.password.value,'1233' );
-assert.equal(result.sex.value,'male' );
+// result:
+{
+  username: { value: 'afei' },
+  password: { value: '1233' },
+  sex: { value: 'male' }
+}
 ```
