@@ -1,10 +1,10 @@
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
 
-  nx.antFieldsValue = function(inObj) {
+  nx.antFieldsValue = function (inObj) {
     var result = {};
-    nx.forIn(inObj, function(key, value) {
+    nx.forIn(inObj, function (key, value) {
       result[key] = { value: value };
     });
     return result;
