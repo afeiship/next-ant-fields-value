@@ -3,7 +3,7 @@
  * description: Set fields value for ant design based on next.
  * homepage: https://github.com/afeiship/next-ant-fields-value
  * version: 1.0.0
- * date: 2020-11-22 17:04:22
+ * date: 2020-11-22 17:05:27
  * license: MIT
  */
 
